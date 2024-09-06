@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "The job was  a ${{ secrets.PAT }} secrets."
-      - run: echo "This job is  ${{ var.MY_NAME }} !"
+      - run: echo "This job is  ${{ vars.MY_NAME }} !"
      
       - name: Check out repository code
         uses: actions/checkout@v4
-      - 
+     

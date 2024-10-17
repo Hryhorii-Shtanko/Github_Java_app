@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Github Java app
 on:
   push:
     branches:
@@ -8,7 +8,8 @@ on:
   
 jobs:
   my_first_job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    # ubuntu-latest
 
     steps:
     

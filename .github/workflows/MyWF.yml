@@ -5,7 +5,8 @@ on:
    workflow_dispatch:
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    # ubuntu-latest
     steps:
       - run: echo "The job was a ${{ secrets.PAT }} secrets." 
       - run: echo "This job is ${{ vars.MY_NAME}} !"
